@@ -1,0 +1,8 @@
+.slick-prev:before, .slick-next:before {
+    color: rgb(255, 0, 204);
+}
+
+.slick-prev:hover:before, .slick-next:hover:before {
+  color: rgb(167, 7, 203);
+  /* @apply text-red-100; */
+}

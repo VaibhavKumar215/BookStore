@@ -1,0 +1,122 @@
+[
+    {
+        "id":1,
+        "name":"Story Book",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "price":0,
+        "category":"Free",
+        "image":"/cardImg.jpg"
+    },
+    {
+       "id":2,
+       "name":"Comedy Book",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "price":20,
+        "category":"Comedy",
+        "image":"/cardImg.jpg"
+    },
+    {
+        "id":3,
+        "name":"Horror Book",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "price":40,
+        "category":"Horror",
+        "image":"/cardImg.jpg"
+    },
+    {
+        "id":4,
+        "name":"Sports Book",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "price":50,
+        "category":"Sports",
+        "image":"/cardImg.jpg"
+    },
+    {
+        "id":5,
+        "name":"Adventure Book",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "price":100,
+        "category":"Adventure",
+        "image":"/cardImg.jpg"
+    },
+    {
+        "id":6,
+        "name":"Magic Book",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "price":0,
+        "category":"Magic",
+        "image":"/cardImg.jpg"
+    },
+    {
+        "id":7,
+        "name":"Mystry Book",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "price":0,
+        "category":"Mystry",
+        "image":"/cardImg.jpg"
+    },
+    {
+        "id":8,
+        "name":"Story Book",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "price":0,
+        "category":"Free",
+        "image":"/cardImg.jpg"
+    },
+    {
+        "id":9,
+        "name":"Story Book",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "price":0,
+        "category":"Free",
+        "image":"/cardImg.jpg"
+    },
+    {
+        "id":10,
+        "name":"Story Book",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "price":0,
+        "category":"Free",
+        "image":"/cardImg.jpg"
+    },
+    {
+        "id":11,
+        "name":"Story Book",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "price":0,
+        "category":"Free",
+        "image":"/cardImg.jpg"
+    },
+    {
+        "id":12,
+        "name":"Story Book",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "price":0,
+        "category":"Free",
+        "image":"/cardImg.jpg"
+    },
+    {
+        "id":13,
+        "name":"Story Book",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "price":0,
+        "category":"Free",
+        "image":"/cardImg.jpg"
+    },
+    {
+        "id":14,
+        "name":"Story Book",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "price":0,
+        "category":"Free",
+        "image":"/cardImg.jpg"
+    },
+    {
+        "id":15,
+        "name":"Story Book",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "price":0,
+        "category":"Free",
+        "image":"/cardImg.jpg"
+    }
+]

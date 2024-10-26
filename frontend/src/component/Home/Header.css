@@ -1,0 +1,25 @@
+.coverImg::after {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 900px;
+    background: linear-gradient(rgb(0, 227, 252), rgb(255, 196, 2));
+    animation: rotate 3s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .coverImg::after {
+      width: 380px;
+      height: 900px;
+    }
+  }
+  
