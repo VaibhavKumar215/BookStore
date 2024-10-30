@@ -1,5 +1,5 @@
 import React from 'react'
-import Book from '../../../public/book.jpg'
+import Book from '/book.jpg'
 import './Header.css'
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
                         <p className='text-xl'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, odio? Blanditiis adipisci dicta, deleniti quam exercitationem fugiat ab qui deserunt dolores, ducimus totam odit magnam eum beatae saepe quasi. Nam.
                         </p>
-                        <label className="input input-bordered flex items-center gap-2">
+                        <label className="input input-bordered flex items-center gap-2 dark:text-gray-500  focus-within:outline-none">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 16 16"
@@ -24,11 +24,11 @@ const Header = () => {
                                 <path
                                     d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
                             </svg>
-                            <input type="email" className="grow" placeholder="Email" />
+                            <input type="email" className="grow dark:text-black" placeholder="Email" />
                         </label>
                     </div>
                     <div className='mt-12'>
-                        <button className="btn btn-outline btn-secondary hover:bg-pink-500">Secondary</button>
+                        <button className="btn btn-secondary">Secondary</button>
                     </div>
                 </div>
                 <div className="coverImg w-full md:w-1/2  md:h-1/3 order-1 relative flex items-center justify-center p-1 overflow-hidden md:ml-10 mb-10">

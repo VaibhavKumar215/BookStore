@@ -1,8 +1,12 @@
-import { React, useState, useEffect } from 'react';
+import { React, useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Login from './Login';
+import LogOut from './LogOut';
+import { userAuth } from '../Context/Authentication';
 
 const Navbar = () => {
+
+    const [authUser,setAuthUser]=userAuth();
 
     const getSystemTheme = () => {
         return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
@@ -56,7 +60,7 @@ const Navbar = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">{navItems}</ul>
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content bg-base-100 rounded-box z-20 mt-3 w-52 p-2 shadow">{navItems}</ul>
                     </div>
                     <a className="text-2xl font-bold cursor-pointer">BookStore</a>
                 </div>
@@ -88,10 +92,12 @@ const Navbar = () => {
                             </svg>
                         </label>
                     </div>
-                    <div>
-                        <a className="bg-black text-white px-3 py-1 rounded-md hover:bg-slate-600 duration-300 cursor-pointer" onClick={()=>document.getElementById('my_modal_3').showModal()}>Login</a>
+                    {authUser?(<LogOut/>):
+                    (<div>
+                        <a className="bg-black text-white px-3 py-1 rounded-md hover:bg-slate-600 duration-300 cursor-pointer dark:bg-pink-500 dark:hover:bg-pink-600" onClick={()=>document.getElementById('my_modal_3').showModal()}>Login</a>
                         <Login/>
                     </div>
+                )}
                 </div>
             </div>
         </div>

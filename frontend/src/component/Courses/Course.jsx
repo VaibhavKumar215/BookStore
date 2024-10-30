@@ -1,13 +1,30 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import Cards from '../Utility/cards'
-import Books from '../../../public/books.json'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 
 const Course = () => {
+    const [booksData,setbooksData]=useState([])
+
+    useEffect(() => {
+        const getBook = async()=>{
+        try {
+            const res= await axios.get('http://localhost:3001/Book')
+            // console.log(res.data)
+            setbooksData(res.data)
+        } catch (error) {
+            console.log('Error in fething the data',error)
+        }
+    }
+    getBook();
+    }, [])
+    
+    
+
     return (
         <>
             <div className={'max-w-screen-2xl container mx-auto md:px-1 px-2'}>
-                <div className='mt-20 text-center '>
+                <div className='mt-10 text-center '>
                     <h1 className='text-2xl md:text-4xl'>We are delighted to have you{" "}
                         <span className='text-pink-500'>Here ! :)</span></h1>
                     <p className='mt-12'>
@@ -24,8 +41,8 @@ const Course = () => {
                     <li><a>Item 2</a></li>
                 </ul>
             </div> */}
-                <div className='mt-14 flex flex-wrap gap-5 justify-center'>
-                    {Books.map((items) => {
+                <div className='mt-5 flex flex-wrap gap-x-5 justify-center'>
+                    {booksData.map((items) => {
                         return <Cards key={items.id} item={items} />
                     })}
                 </div>
